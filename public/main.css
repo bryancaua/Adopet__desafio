@@ -1,0 +1,40 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+   --azul-principal: #3772FF;
+   --verde-esmeralda: #36D6AD;
+   --coral-cor: #FC7071;
+   --creme-cor: #FCF0E3;
+   --cinza-cor: #737380;
+   --cinza-claro: #BCBCBC;
+   --cinza-claro-fundos: #F6F6F6;
+}
+
