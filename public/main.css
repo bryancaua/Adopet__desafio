@@ -40,11 +40,16 @@
 }
 
 
-
+html, body {
+  height: 100%;
+}
 
 
 .body {
   background-color: var(--azul-principal);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .forma-container {
@@ -53,6 +58,7 @@
     left: 0;
     z-index: 1; 
 }
+
 
 .forma {
     position: relative;
@@ -87,20 +93,27 @@ button {
     z-index: 1; 
 }
 
+.container {
+  flex: 1; /* Ocupa todo o espaço restante */
+}
+
+
 .section__home {
   max-width: 100%;
+  position: relative;
 }
 
 .section__container {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .adopet__logo_section {
   width: 18rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 
 .h2__section_home {
@@ -143,7 +156,36 @@ button {
 }
 
 .imagem__ilustracao {
-  display: block;
-  margin: 0 auto;
-  margin-top: 5rem;
+    flex-shrink: 1;
+    width: 40%; 
+    max-width: 300px; 
+    margin: 0 auto;
 }
+
+.forma__canto_direito {
+  position: absolute;
+  right: 0%;
+  top: 20%;
+}
+
+.home__footer {
+  background-color: var(--verde-esmeralda);
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+
+.imagem__container {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+
