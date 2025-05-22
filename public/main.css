@@ -52,6 +52,11 @@ html, body {
   min-height: 100vh;
 }
 
+.container {
+  flex: 1; /* Ocupa todo o espaço restante */
+  margin: 1rem;
+}
+
 .forma-container {
     position: absolute;
     top: 0; 
@@ -92,11 +97,6 @@ button {
     position: relative; 
     z-index: 1; 
 }
-
-.container {
-  flex: 1; /* Ocupa todo o espaço restante */
-}
-
 
 .section__home {
   max-width: 100%;
