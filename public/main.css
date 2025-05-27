@@ -49,7 +49,7 @@
 
 .container {
   z-index: 1;
-  flex: 1; /* Ocupa todo o espaço restante */
+  flex: 1; 
 }
 
 .forma-container {
@@ -62,22 +62,24 @@
 
 .forma {
     position: relative;
-    height: auto; 
+    width: 100%;
+  max-width: 700px; /* se quiser limitar o tamanho no desktop */
+  height: auto;
 }
 
 .adopet__logo_bege {
   margin-right: 1rem;
+  align-items: baseline;
 }
 
 .botoes {
-    position: relative; 
-    top: 40px; 
-    left: 8%; 
-    margin: 1rem;
-    display: flex; 
-    list-style: none; 
-    align-items: center; 
-    gap: 25px; 
+       position: relative;
+  top: 40px;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 2rem;
 }
 
 .botoes li {
@@ -189,10 +191,16 @@ button {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding-top: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
 
   .botoes {
-    left: 5%;
+    left: -3%;
     gap: 60px;
   }
 
@@ -200,7 +208,7 @@ button {
     padding-top: 6rem; 
   }
   .adopet__logo_section {
-    width: 15rem
+    width: 15rem;
   }
 
   .imagem__container {
@@ -214,8 +222,13 @@ button {
 
 @media (max-width: 360px) {
 
+  .adopet__logo_section {
+    margin-top: 2rem;
+  }
+
   .section__container { 
     margin: 1rem;
+    gap: 2rem;
   }
 
   .forma {
@@ -229,18 +242,19 @@ button {
   .botoes {
     gap: 3rem;
     margin: 0;
-    left: 1%;
   }
   
   .forma__canto_direito {
    width: 5rem;
-   top: 43%;
+   top: 40%;
   }
 
-
-  
   .botao__section_home {
     padding: 5px 10px;
+  }
+
+  .p__section_home {
+    max-width: 15rem;
   }
 
   .imagem__ilustracao {
