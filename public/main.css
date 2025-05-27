@@ -40,11 +40,6 @@
 }
 
 
-html, body {
-  height: 100%;
-}
-
-
 .body {
   background-color: var(--azul-principal);
   display: flex;
@@ -53,8 +48,8 @@ html, body {
 }
 
 .container {
+  z-index: 1;
   flex: 1; /* Ocupa todo o espaço restante */
-  margin: 1rem;
 }
 
 .forma-container {
@@ -108,6 +103,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .adopet__logo_section {
@@ -166,6 +163,7 @@ button {
   position: absolute;
   right: 0%;
   top: 20%;
+  z-index: 0;
 }
 
 .home__footer {
@@ -187,5 +185,69 @@ button {
   margin-top: 1rem;
 }
 
+.forma__canto_direito_menor {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .botoes {
+    left: 5%;
+    gap: 60px;
+  }
+
+  .section__container {
+    padding-top: 6rem; 
+  }
+  .adopet__logo_section {
+    width: 15rem
+  }
+
+  .imagem__container {
+    padding-top: 3rem;
+  }
+
+  .imagem__ilustracao {
+    width: 30%;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .section__container { 
+    margin: 1rem;
+  }
+
+  .forma {
+    width: 21rem;
+  }
+
+  .adopet__logo_bege {
+    display: none;
+  }
+
+  .botoes {
+    gap: 3rem;
+    margin: 0;
+    left: 1%;
+  }
+  
+  .forma__canto_direito {
+   width: 5rem;
+   top: 43%;
+  }
 
 
+  
+  .botao__section_home {
+    padding: 5px 10px;
+  }
+
+  .imagem__ilustracao {
+    width: 15rem;
+  }
+
+  .imagem__container {
+    padding-top: 0;
+  }
+}
