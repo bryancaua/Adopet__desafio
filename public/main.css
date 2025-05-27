@@ -61,9 +61,9 @@
 
 
 .forma {
-    position: relative;
-    width: 100%;
-  max-width: 700px; /* se quiser limitar o tamanho no desktop */
+  position: relative;
+  width: 100%;
+  max-width: 700px; 
   height: auto;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .botoes {
-       position: relative;
+  position: relative;
   top: 40px;
   padding-left: 5%;
   display: flex;
@@ -187,9 +187,6 @@ button {
   margin-top: 1rem;
 }
 
-.forma__canto_direito_menor {
-  display: none;
-}
 
 @media (max-width: 1200px) {
   .container {
