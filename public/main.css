@@ -130,6 +130,15 @@ button {
   text-align: center;
 }
 
+.p__section_home_mobile {
+  display: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 .botoes__section_home {
   display: flex;
   flex-direction: column;
@@ -219,13 +228,21 @@ button {
 
 @media (max-width: 360px) {
 
+  .p__section_home_mobile {
+    display: block;
+  }
+
+  .p__section_home {
+    display: none;
+  }
+
   .adopet__logo_section {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 
   .section__container { 
     margin: 1rem;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .forma {
@@ -256,6 +273,7 @@ button {
 
   .imagem__ilustracao {
     width: 15rem;
+    margin-right: 3rem;
   }
 
   .imagem__container {
