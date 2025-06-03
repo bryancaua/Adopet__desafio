@@ -1,0 +1,118 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-principal: #3772FF;
+  --verde-esmeralda: #36D6AD;
+  --coral-cor: #FC7071;
+  --creme-cor: #FCF0E3;
+  --cinza-cor: #737380;
+  --cinza-claro: #BCBCBC;
+  --cinza-claro-fundos: #F6F6F6;
+  --coral-rosado-hover: #FF9D9E;
+}
+
+
+.body__cadastro {
+  background-color: var(--cinza-claro-fundos);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.div__header_home_cadastro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5%;
+  z-index: 1;
+}
+
+
+.forma-container_cadastro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.forma__cadastro {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+/* Conteúdo do header */
+.header__conteudo_cadastro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Botões à esquerda */
+.botoes-wrapper {
+  display: flex;
+}
+
+.botoes_cadastro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.botoes_cadastro li {
+  display: flex;
+  align-items: center;
+}
+
+.adopet__logo_bege_cadastro {
+  margin-right: 1rem;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.patinhas-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.patinhas__superior_direita {
+     position: absolute;
+  top: 0;
+  right: 0;
+  width: 40vw;         /* 40% da largura da viewport */
+  max-width: 300px;    /* nunca maior que 300px */
+  min-width: 150px;    /* nunca menor que 100px, opcional */
+  height: auto;
+  z-index: 2;
+}
