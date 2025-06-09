@@ -35,7 +35,7 @@
 
 
 .body__cadastro {
-  background-color: var(--cinza-claro-fundos);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -80,7 +80,7 @@
 .botoes_cadastro {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 35px;
   margin-top: 40px;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .adopet__logo_bege_cadastro {
-  margin-right: 1rem;
+  margin-right: 0.8rem;
 }
 
 button {
@@ -149,17 +149,36 @@ button {
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
-  background-color: var(--cinza-claro-fundos);
   margin: 0 auto;
-  gap: 1rem;
+  gap: 0.5rem;
   border-radius: 12px;
   align-items: center;
   border: none;
 }
 
-.form__label {
+.formulario label {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--cinza-cor);
+  margin-top: 1rem;
+}
+
+.formulario input {
+  padding: 1rem;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  min-width: 30rem;
+  max-width: 25rem;
+  background-color: var(--cinza-claro-fundos);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.formulario ::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--cinza-claro);
+  align-items: center;
 }
