@@ -143,6 +143,8 @@ button {
   right: 0%;
   top: 20%;
   z-index: 0;
+  max-width: 10%;
+  max-width: 700px;
 }
 
 .formulario {
@@ -151,6 +153,8 @@ button {
   flex-direction: column;
   margin: 0 auto;
   gap: 0.5rem;
+  width: 80%;           
+  max-width: 1000px;
   border-radius: 12px;
   align-items: center;
   border: none;
@@ -169,8 +173,8 @@ button {
   align-items: center;
   border: none;
   border-radius: 8px;
-  min-width: 30rem;
-  max-width: 25rem;
+  min-width: 80%;
+  max-width: 20rem;
   background-color: var(--cinza-claro-fundos);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -180,5 +184,67 @@ button {
   font-weight: 400;
   font-size: 1rem;
   color: var(--cinza-claro);
-  align-items: center;
+  text-align: center;
+}
+
+.formulario input.input__curto {
+  min-width: 50%;
+}
+
+.botao__form_cadastrar {
+  background-color: var(--coral-cor);
+  border-radius: 6px;
+  width: 12rem;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffff;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+
+
+.cadastro__footer {
+  background-color: var(--verde-esmeralda);
+  max-width: 100%;
+  padding: 1rem;
+  margin-top: 8rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+  .mensagem__logo_cadastro {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .botoes_cadastro {
+    gap: 4rem;
+  }
+
+  .formulario input.input__curto {
+    min-width: 80%;
+  }
+
+  .mensagem__logo_cadastro {
+    padding-top: 8rem;
+  }
+
+  .patinhas__superior_direita {
+    width: 35vw;
+  }
+
+  .forma__canto_direito {
+    top: 40%;
+    width: 15vw;
+    margin-left: 5rem;
+  }
 }
