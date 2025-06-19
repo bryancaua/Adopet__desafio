@@ -51,6 +51,12 @@
 }
 
 
+.section__cadastro {
+  position: relative;
+  min-height: 100vh; 
+  z-index: 1;
+}
+
 .forma-container_cadastro {
   position: absolute;
   top: 0;
@@ -125,6 +131,12 @@ button {
     gap: 2.5rem;
 }
 
+.mensagem__logo_cadastro,
+.formulario {
+  position: relative;
+  z-index: 1;
+}
+
 .adopet__logo_azul_cadastro {
   width: 300px;
 }
@@ -136,6 +148,7 @@ button {
     font-size: 1.2rem;
     line-height: 26px;
     text-align: center;
+    z-index: 1;
 }
 
 .forma__canto_direito {
@@ -245,6 +258,43 @@ button {
   .forma__canto_direito {
     top: 40%;
     width: 15vw;
-    margin-left: 5rem;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .adopet__logo_bege_cadastro {
+    display: none;
+  }
+
+  .mensagem__logo_cadastro {
+    padding-top: 2rem;
+  }
+
+
+  .p__section_cadastro {
+    max-width: 20rem;
+  }
+
+  .adopet__logo_azul_cadastro {
+    width: 60%;
+  }
+
+  .botoes_cadastro {
+    margin-top: 20px;
+    gap: 3rem;
+  }
+
+  .formulario {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .forma__canto_direito {
+    transform: scaleX(-1);
+    left: 0%;
+    top: 50%;
+    z-index: 0;
+    width: 25%;
   }
 }
