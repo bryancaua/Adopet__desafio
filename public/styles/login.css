@@ -269,12 +269,9 @@ button {
 
   .mensagem__logo_cadastro {
     padding-top: 3rem;
+    gap: 4rem;
   }
 
-
-  .p__section_cadastro {
-    max-width: 20rem;
-  }
 
   .adopet__logo_azul_cadastro {
     width: 60%;
@@ -282,18 +279,20 @@ button {
 
   .botoes_cadastro {
     margin-top: 20px;
-    gap: 3rem;
+    margin-right: 5rem;
+    gap: 4rem;
   }
 
   .formulario {
     width: 100%;
     z-index: 1;
+    padding-top: 4rem;
   }
 
   .forma__canto_direito {
     transform: scaleX(-1);
     left: 0%;
-    top: 50%;
+    top: 40%;
     z-index: 0;
     width: 25%;
   }
