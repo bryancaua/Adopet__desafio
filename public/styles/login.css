@@ -209,11 +209,15 @@ button {
   border-radius: 6px;
   width: 12rem;
   padding: 0.5rem;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.botao__form_entrar {
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #ffff;
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
 }
 
 

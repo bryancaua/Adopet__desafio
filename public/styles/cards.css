@@ -1,0 +1,119 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-principal: #3772FF;
+  --verde-esmeralda: #36D6AD;
+  --coral-cor: #FC7071;
+  --creme-cor: #FCF0E3;
+  --cinza-cor: #737380;
+  --cinza-claro: #BCBCBC;
+  --cinza-claro-fundos: #F6F6F6;
+  --coral-rosado-hover: #FF9D9E;
+}
+
+
+.body__cadastro {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.div__header_home_cadastro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5%;
+  z-index: 1;
+}
+
+
+.section__cadastro {
+  position: relative;
+  min-height: 100vh; 
+  z-index: 1;
+}
+
+.forma-container_cadastro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.forma__cadastro {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+/* Conteúdo do header */
+.header__conteudo_cadastro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Botões à esquerda */
+.botoes-wrapper {
+  display: flex;
+}
+
+.botoes_cadastro {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.botoes_cadastro li {
+  display: flex;
+  align-items: center;
+}
+
+.adopet__logo_bege_cadastro {
+  margin-right: 0.8rem;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+.p__section_cards {
+    color: var(--azul-principal);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 26px;
+    text-align: center;
+    z-index: 1;
+    padding-top: 6rem;
+}
