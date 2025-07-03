@@ -119,16 +119,29 @@ button {
 }
 
 .section__cards {
-  margin: 2rem 10rem;
+  margin: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pets__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 .dunga {
   display: flex;
   background-color: var(--cinza-claro-fundos);
-  max-width: 22.5rem;
+  max-width: 27rem;
   flex-direction: row;
   gap: 1rem;
   padding: 1rem;
+  padding-right: 2.5rem;
 }
 
 .textos__cards {
