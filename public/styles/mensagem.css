@@ -115,6 +115,12 @@
     }
 }
 
+@media (max-width:500px) {
+    .adopet__logo_bege_cadastro {
+        display: none;
+    }
+}
+
 @media (max-width: 400px) {
 
     .section__mensagem_responsavel {
