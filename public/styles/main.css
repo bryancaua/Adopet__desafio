@@ -93,7 +93,8 @@ button {
     cursor: pointer; 
     position: relative; 
     z-index: 1; 
-}
+
+  }
 
 .section__home {
   max-width: 100%;

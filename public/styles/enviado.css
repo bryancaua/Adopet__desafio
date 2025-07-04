@@ -1,0 +1,21 @@
+.section__button_voltar {
+    margin: 1rem auto;
+    display: flex;
+    margin: 0 auto;         
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.p__mensagem_enviado {
+    color: var(--azul-principal);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 8rem;
+    margin: 1rem auto;
+    position: relative;
+    z-index: 1;
+}
