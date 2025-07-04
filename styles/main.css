@@ -241,6 +241,12 @@ button {
   .adopet__logo_bege {
     display: none;
   }
+
+    .botoes {
+    gap: 3rem;
+    margin: 0;
+  }
+  
 }
 
 @media (max-width: 360px) {
@@ -270,11 +276,6 @@ button {
     display: none;
   }
 
-  .botoes {
-    gap: 3rem;
-    margin: 0;
-  }
-  
   .forma__canto_direito {
    width: 5rem;
    top: 40%;

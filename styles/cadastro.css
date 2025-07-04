@@ -261,11 +261,16 @@ button {
   }
 }
 
-
-@media (max-width: 360px) {
+@media (max-width: 460px) {
   .adopet__logo_bege_cadastro {
     display: none;
   }
+
+  
+}
+
+
+@media (max-width: 360px) {
 
   .mensagem__logo_cadastro {
     padding-top: 3rem;
