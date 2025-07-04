@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@
    --cinza-claro-fundos: #F6F6F6;
    --coral-rosado-hover : #FF9D9E;
 }
+
 
 .p__mensagem_responsavel {
     color: var(--azul-principal);

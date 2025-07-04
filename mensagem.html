@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/styles/cadastro.css">
-    <link rel="stylesheet" href="../public/styles/login.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/mensagem.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Cadastro</title>
+    <title>Adopet</title>
 </head>
-<body class="body__cadastro">
-
-  <header class="header">
+<body>
+<header class="header">
     <div class="div__header_home_cadastro">
       <div class="forma-container_cadastro">
         <img src="./assets/Forma 1.svg" alt="forma__verde_esmeralda_cadastro" class="forma__cadastro" />
@@ -46,37 +46,38 @@
     </div>
   </header>
 
-  <section class="section__cadastro">
 
-    <div class="mensagem__logo_cadastro">
-      <img src="./assets/Adopet__logo_azul.svg" alt="Logo da Adopet cor azul" class="adopet__logo_azul_cadastro">
-      <p class="p__section_cadastro">Ainda não tem cadastro?<br>
-          Então, antes de buscar seu melhor amigo, precisamos de<br> alguns dados:</p>
-    </div>
 
-    <img src="./assets/Forma 2.svg" alt="Forma do canto direito" class="forma__canto_direito">
 
-    <form class="formulario">
+
+  <p class="p__mensagem_responsavel">Envie uma mensagem para a pessoa ou instituição<br> que está cuidando do animal:</p>
+
+  <section class="section__mensagem_responsavel">
+
+        <form class="formulario__responsavel">
+
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+        <input type="text" id="nome" name="nome" placeholder="Insira seu nome completo" required />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu melhor email" required  />
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Insira seu telefone e/ou whatsapp" required />
 
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha"  class="input__curto" placeholder="Crie uma senha" required />
+        <label for="animal">Nome do animal</label>
+        <input type="text" id="animal" name="animal" placeholder="Por qual animal você se interessou?" required />
 
-        <label for="senha__confirmacao">Confirmar sua senha</label>
-        <input type="password" id="senha" name="senha__confirm"  class="input__curto" placeholder="Repita a senha criada" required />
-        
-        <button class="botao__form_cadastrar"><a href="./cards.html" class="botao__form_entrar">Cadastrar!</a></button>
-    </form>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" class="input__formulario_responsavel_mensagem" placeholder="Escreva sua mensagem." required></textarea>
+
+        </form>
 
 
-    
+    <button class="botao__responsavel_enviar"><a href="./enviado.html" class="botao__form_entrar">Enviar!</a></button>
+
   </section>
 
-   <footer  class="cadastro__footer">
+  <img src="./assets/Forma 2.svg" alt="Forma do canto direito" class="forma__canto_direito">
+
+    <footer class="cadastro__footer">
         2025 - Desenvolvido por Bryan
     </footer>
 </body>

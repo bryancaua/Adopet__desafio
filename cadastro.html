@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- CSS com caminho correto -->
+    <link rel="stylesheet" href="./styles/cadastro.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <title>Cadastro</title>
+</head>
+<body class="body__cadastro">
+
+  <header class="header">
+    <div class="div__header_home_cadastro">
+      <div class="forma-container_cadastro">
+        <img src="./assets/Forma 1.svg" alt="forma__verde_esmeralda_cadastro" class="forma__cadastro" />
+      </div>
+
+      <div class="header__conteudo_cadastro">
+        <div class="botoes-wrapper">
+          <ul class="botoes_cadastro">
+            <li>
+              <button class="adopet__logo_bege_cadastro">
+                <img src="./assets/Logo.svg" alt="Logo da marca Adopet na cor bege" />
+              </button>
+            </li>
+            <li>
+              <button class="icon__casa_cadastro">
+                <img src="./assets/Casa__icon.svg" alt="Ícone de casinha" />
+              </button>
+            </li>
+            <li>
+              <button class="icon__mensagem_cadastro">
+                <img src="./assets/Mensagens__icon.svg" alt="Ícone de mensagem" />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="patinhas-wrapper">
+          <img src="./assets/Patas.svg" alt="patas de animais diversos" class="patinhas__superior_direita" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__cadastro">
+
+    <div class="mensagem__logo_cadastro">
+      <img src="./assets/Adopet__logo_azul.svg" alt="Logo da Adopet cor azul" class="adopet__logo_azul_cadastro" />
+      <p class="p__section_cadastro">Ainda não tem cadastro?<br>
+          Então, antes de buscar seu melhor amigo, precisamos de<br> alguns dados:</p>
+    </div>
+
+    <img src="./assets/Forma 2.svg" alt="Forma do canto direito" class="forma__canto_direito" />
+
+    <form class="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu melhor email" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" class="input__curto" placeholder="Crie uma senha" required />
+
+        <label for="senha__confirmacao">Confirmar sua senha</label>
+        <input type="password" id="senha__confirmacao" name="senha__confirm" class="input__curto" placeholder="Repita a senha criada" required />
+        
+        <button class="botao__form_cadastrar">
+          <a href="./cards.html" class="botao__form_entrar">Cadastrar!</a>
+        </button>
+    </form>
+
+  </section>
+
+   <footer class="cadastro__footer">
+        2025 - Desenvolvido por Bryan
+    </footer>
+</body>
+</html>
