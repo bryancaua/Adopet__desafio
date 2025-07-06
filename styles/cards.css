@@ -7,6 +7,8 @@
   text-align: center;
   z-index: 1;
   padding-top: 6rem;
+  max-width: 20rem;
+  margin: 0 auto;
 }
 
 .section__cards {
