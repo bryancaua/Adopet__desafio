@@ -99,6 +99,15 @@
   margin-right: 0.8rem;
 }
 
+.botoes_cadastro button img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.botoes_cadastro button:hover img {
+  filter: brightness(1.1) sepia(0.5) hue-rotate(-10deg) saturate(1.8);
+  transform: scale(1.05);
+}
+
 button {
   background: none;
   border: none;
@@ -206,16 +215,43 @@ button {
 
 .botao__form_cadastrar {
   background-color: var(--coral-cor);
-  border-radius: 6px;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
   width: 12rem;
-  padding: 0.5rem;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #ffff;
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(252, 112, 113, 0.4);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
+.botao__form_cadastrar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--coral-rosado-hover);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.botao__form_cadastrar:hover::before {
+  left: 0;
+}
+
+.botao__form_cadastrar:hover {
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(252, 112, 113, 0.6);
+}
 
 
 .cadastro__footer {
